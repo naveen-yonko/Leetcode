@@ -12,7 +12,7 @@ class Solution {
         l=0;
         int l2= h;
         h= (h+nums.length-1)%nums.length;//Math.max(h-1,0);
-        System.out.println(nums[h]);
+        //System.out.println(nums[h]);
         while(l<=h){
             int mid = l+(h-l)/2;
             if(nums[mid] == target){
