@@ -1,0 +1,21 @@
+class Solution {
+    public int countPrimeSetBits(int left, int right) {
+        int cnt=0;
+        for(int i=left;i<=right;i++){
+            if(isprime(Integer.bitCount(i))){
+                cnt++;
+            }
+        }
+        return cnt;
+    }
+    public boolean isprime(int n){
+        //6k+-1 approach
+        if(n<=1){return false;}
+        if(n<=3){return true;}
+        if(n%2 ==0 || n%3 ==0){return false;}
+        for(int i=5;i*i<n;i+=6){
+            if(n%i==0 || n%(i+2)==0){return false;}
+        }
+        return true;
+    }
+}
