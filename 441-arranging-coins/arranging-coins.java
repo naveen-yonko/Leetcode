@@ -5,9 +5,11 @@ class Solution {
         long sum=0;
         for(i=1;i<n;i++){
             sum+=i;
-            if(sum >n) break;
-            else if(sum==n){
+            if(sum==n){
                 s=1;
+                break;
+            }
+            else if(sum>n){
                 break;
             }
         }
