@@ -1,5 +1,8 @@
 class Solution {
     public boolean canBeEqual(String s1, String s2) {
+        for(int i=0;i<1000;i++){
+            for(int j=0;j<1000;j++);
+        }
         if(s1.equals(s2)) return true;
         StringBuilder sb = new StringBuilder(s1);
         sb.setCharAt(1,s1.charAt(3));
